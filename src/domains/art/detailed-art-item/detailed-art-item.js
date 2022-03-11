@@ -13,7 +13,7 @@ export const DetailedArtItem = (props) => {
     
     return (
             <div className="details-container">
-                <img src={props.src} />
+                <img src={props.src} alt={props.alt} />
                 <div className="details-text-container">
                     <div className="details-text">
                         <h2>{props.title}</h2>

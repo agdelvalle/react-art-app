@@ -16,7 +16,7 @@ export const Header = (props) => {
 
     return (
         <header className="navbar navbar-default navbar-fixed-top">
-            <Link to="/"><div className="header-left-icon navbar-left"><img src={brush}/><h2>Artists' Palette</h2></div></Link>
+            <Link to="/"><div className="header-left-icon navbar-left"><img src={brush} alt="paintbrush with a rainbow-colored streak"/><h2>Artists' Palette</h2></div></Link>
             <div className="header-right-menu navbar-right">
                 <ul>
                     {authStatus === 'anonymous' ? 

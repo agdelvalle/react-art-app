@@ -49,7 +49,7 @@ export const ArtItem = (props) => {
     return (
     <>
         <div className="art-card" id={props.id} onLoad={()=> loadPalettes()}>
-            <img src={props.url}></img>
+            <img src={props.url} alt={props.alt}></img>
             <h4>"{props.title}"</h4>
             <b><p>{props.artist}</p></b><p>{props.date}</p>
             <div className="swatch-container">

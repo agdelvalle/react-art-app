@@ -57,6 +57,7 @@ export const Landing = () => {
         return () => {
         ab.abort();
         };
+    // eslint-disable-next-line
     }, [page])
     
     return( 
@@ -79,6 +80,7 @@ export const Landing = () => {
                 date={art.date_display}
                 id={art.id}
                 key={art.id}
+                alt={art.artist_title}
                 />))
             : <Loader />}
         {listings? <div className='pageNavContainer'>

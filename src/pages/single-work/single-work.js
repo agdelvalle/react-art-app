@@ -34,6 +34,7 @@ export const ArtPage = (props) => {
         return () => {
         ab.abort();
         };
+    // eslint-disable-next-line
     }, [id])
 
     return(
