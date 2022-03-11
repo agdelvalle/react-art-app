@@ -1,0 +1,17 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.errormsg{
+    color: maroon;
+}

@@ -1,0 +1,16 @@
+.result-container, .search-result{
+    display: flex;
+    align-items: center;
+}
+
+.result-container {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.search-result {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}

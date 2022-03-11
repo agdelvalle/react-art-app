@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+p,  h4, h5, h6, button, li{
+    font-family: 'Jost', sans-serif;
+}
+
+h1, h2, h3, label {
+    font-family: 'Spartan', sans-serif;
+}
+
+@media screen and (min-width: 220px) {
+    body {
+        padding-top: 155px; 
+    }
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        padding-top: 85px; 
+    }
+}

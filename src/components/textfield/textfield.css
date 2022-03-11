@@ -1,0 +1,18 @@
+.textfield-container{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border: 2px solid lightslategray;
+    border-radius: 10px;
+    margin: 2px 0 10px 0;
+}
+
+input:focus {
+    border: 4px solid #FBAB7E;
+}
+
+.input-label {
+    font-family: 'Spartan', sans-serif;
+}
