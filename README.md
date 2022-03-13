@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Artists' Palette
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
 
-## Available Scripts
+Artists' Palette is designed to show you the colors used in some of the world's most famous artworks, from the public data shared by the renowned Art Institute of Chicago. You can browse through the museum's collection, search for an artwork of your choice, view details about the artworks (including the hex codes for the colors used in the work), and even save your favorites. 
 
-In the project directory, you can run:
+## Setup
 
-### `npm start`
+There is no setup necessary, simply view the site live here. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## FAQs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### What technologies were used to make the app? 
+The app was created using React JS and the <a href="https://api.artic.edu/docs/#introduction">Art Institute of Chicago's API</a>. The app also makes use of a few libraries: <a href="https://getbootstrap.com/docs/3.4/getting-started/">Bootstrap</a> for styling, <a href="https://axios-http.com/docs/intro">Axios</a> for requests, and <a href="https://github.com/Vibrant-Colors/node-vibrant">Vibrant</a> to extract the hex color codes for the prominent colors in the images of the artworks. 
 
-### `npm test`
+### How do I browse through the artworks?
+To browse through the available artworks, you can click the "previous" and "next" buttons at the bottom part of the homepage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How do I search for a specific work or artist? 
+On the homepage, you may enter any search term into the textbox and click "search". 
 
-### `npm run build`
+### What if I cannot find the work I am looking for? 
+Although you might not find a particular artist or work, the Art Institute of Chicago's collection continues to grow. Check out their website for more information on the works you might find in their collection. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### How do I save artworks to my favorites? 
+To save to favorites, you must be logged in. First register for an account, then login. Browse through artworks on the homepage or search for a title or an srtist, then click on the <3 button to save the work to your favorites. You may view your favorites by clicking on the link in the header. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
