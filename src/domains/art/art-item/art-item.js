@@ -9,12 +9,9 @@ import { Link } from 'react-router-dom';
 
 
 export const ArtItem = (props) => {
-
-    // const [favorite, setFavorite] = React.useState(false)
     
     const { authStatus } = UseAuth();
     const { state: {favorites}, dispatch } = useFavsContext();
-    // console.log(favorites)
 
     function loadPalettes(){
         Vibrant.from(`${props.url}`).getPalette()
@@ -64,23 +61,10 @@ export const ArtItem = (props) => {
             {authStatus === 'anonymous' ? 
             null :
                 Array.isArray(favorites) && favorites.includes(`${props.id}`) ?
-                // favorites.some((id)=>id===props.id) ? 
                     <Button innerText={<span className="glyphicon glyphicon-heart" aria-hidden="true"></span>}
                     mode="liked"
                     onClick = {() => {
                         dispatch({type:'removeFav', payload:(`${props.id}`)})
-                        // let getFavorites = localStorage.getItem("favorites");
-                        // if(getFavorites === null){
-                        //     console.log(getFavorites)
-                        // } else {
-                        //     let getFavoritesJson = JSON.parse(getFavorites)
-                        //     let indexOfItem = getFavoritesJson.indexOf(`${props.id}`)
-                        //     getFavoritesJson.splice(indexOfItem, 1);
-                        //     localStorage.setItem("favorites", JSON.stringify(getFavoritesJson));
-                        //     console.log(getFavorites)
-                        //     setFavorite(false);
-                        //     console.log("remove from favorites") 
-                        // }
                     }}
                     />
                 : <Button innerText={<span className="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>}
@@ -88,22 +72,13 @@ export const ArtItem = (props) => {
                     onClick = {() => {
                         dispatch({type:'addFav', payload:(`${props.id}`)})
                         console.log("current global favorites are" + favorites)
-                        // let getFavorites = localStorage.getItem("favorites");
-                        // if(getFavorites === null){
-                        //     localStorage.setItem("favorites", JSON.stringify([`${props.id}`]));
-                        //     console.log(getFavorites)
-                        // } else {
-                        //     let getFavoritesJson = JSON.parse(getFavorites)
-                        //     getFavoritesJson.push(JSON.stringify(props.id));
-                        //     localStorage.setItem("favorites", JSON.stringify(getFavoritesJson));
-                        //     console.log(getFavorites)
-                        // }
-                        // setFavorite(true); 
                 }}
                 />
             }
+            {props.url === 'null' ? 
+            <Button mode="colorful" className="viewbtn" innerText="View Details" disabled/> :
             <Link to="/viewWork" state={{id:props.id}}><Button mode="colorful" className="viewbtn" innerText="View Details" /></Link>
-
+            }
             </div>
         </div> 
     </>

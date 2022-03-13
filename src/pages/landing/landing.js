@@ -46,7 +46,6 @@ export const Landing = () => {
             setisLoading(true)
             console.log(data.data)
             setBaseUrl(data.config.iiif_url)
-            // console.log(imgBaseLink)
             setListings(data.data)
             setisLoading(false)
         })

@@ -4,13 +4,13 @@
 }
 
 .result-container {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.search-result {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
+.results-banner{
+    width: 100%;
+    text-align: center;
 }

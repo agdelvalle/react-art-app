@@ -47,7 +47,7 @@ export const ArtPage = (props) => {
         }
         {artInfo ?
             <DetailedArtItem  
-                src={`${baseUrl}/${artInfo.image_id}/full/843,/0/default.jpg`}
+                src={status !== 'Error' ? `${baseUrl}/${artInfo.image_id}/full/843,/0/default.jpg` : null}
                 title={artInfo.title}
                 date={artInfo.date_end}
                 artist ={artInfo.artist_title}

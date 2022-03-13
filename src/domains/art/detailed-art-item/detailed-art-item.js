@@ -39,12 +39,14 @@ export const DetailedArtItem = (props) => {
                                     console.log("current global favorites are" + favorites)
                             }} />
                     }
-                    <div className="palette">
+                    {props.src === 'null' ? null :
+                        <div className="palette">
                         <h3>Palette: </h3>
                         <DetailedPalette 
                         src={props.src}
                         />
                     </div>    
+                    }
                 </div>
             </div>
     )

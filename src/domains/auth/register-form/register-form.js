@@ -54,7 +54,7 @@ export const RegisterForm = () => {
                     renderRedirect();
                 })
             }}>
-                <TextField name="name" type="text" labeltext="Username" value={name} 
+                <TextField name="name" type="text" labeltext="Name" value={name} 
                     onChange={(ev) => setName(ev.target.value)}/>
                 <TextField name="email" type="text" labeltext="Email" value={email} 
                     onChange={(ev) => setEmail(ev.target.value)}/>
